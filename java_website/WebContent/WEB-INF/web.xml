@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Mentors_APP</display-name>
+
+  <servlet>
+    <servlet-name>e1</servlet-name>
+    <servlet-class>mentors.action.LoginEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>e1</servlet-name>
+    <url-pattern>/emp</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Employee_Details -->
+  	<servlet>
+ 		   <servlet-name>e2</servlet-name>
+    	   <jsp-file>/Emp_Registration.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>e2</servlet-name>
+ 		   <url-pattern>/Emp_Registration</url-pattern>
+ 		 </servlet-mapping>
+  	
+  <!-- Display Employee Details -->
+  		<servlet>
+ 		   <servlet-name>e3</servlet-name>
+    	   <jsp-file>/Display_Emp_Details.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>e3</servlet-name>
+ 		   <url-pattern>/employee_update</url-pattern>
+ 		 </servlet-mapping>
+  	
+  	<!-- Store Updated  Details(Employee) -->
+  	
+  		<servlet>
+ 		   <servlet-name>e4</servlet-name>
+    	   <jsp-file>/Updated_Emp_Details.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>e4</servlet-name>
+ 		   <url-pattern>/store_updated_details</url-pattern>
+ 		 </servlet-mapping>
+  		
+  	<!-- Delete Employee Details -->
+  		
+  		<servlet>
+ 		   <servlet-name>e5</servlet-name>
+    	   <jsp-file>/Emp_Delete_Details.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>e5</servlet-name>
+ 		   <url-pattern>/employee_delete</url-pattern>
+ 		 </servlet-mapping>
+  	
+  
+ 	<!-- Admin Login -->
+ 	
+ 		 <servlet>
+ 		   <servlet-name>a1</servlet-name>
+    	   <jsp-file>/Admin_Login.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>a1</servlet-name>
+ 		   <url-pattern>/admin</url-pattern>
+ 		 </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>s1</servlet-name>
+    <jsp-file>/StudentUpdate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s1</servlet-name>
+    <url-pattern>/student_update</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   
+  <servlet>
+    <servlet-name>u1</servlet-name>
+    <jsp-file>/UpdateDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>u1</servlet-name>
+    <url-pattern>/update_details</url-pattern>
+  </servlet-mapping>
+
+
+<!-- Amount Paid -->  
+	   <servlet>
+    <servlet-name>amount</servlet-name>
+    <jsp-file>/amount_paid.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>amount</servlet-name>
+    <url-pattern>/amount_paid</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>s2</servlet-name>
+    <servlet-class>mentors.action.StudentDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>s2</servlet-name>
+    <url-pattern>/student_details</url-pattern>
+  </servlet-mapping>
+  
+ <!-- Accountent Login -->
+  	<servlet>
+ 		   <servlet-name>r1</servlet-name>
+    	   <jsp-file>/acctnt_login_verify.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>r1</servlet-name>
+ 		   <url-pattern>/recp</url-pattern>
+ 		 </servlet-mapping>
+  		
+  
+  <!-- Payment page -->
+  	<servlet>
+ 		   <servlet-name>p1</servlet-name>
+    	   <jsp-file>/payment_main.jsp</jsp-file>
+  		 </servlet>
+ 		 <servlet-mapping>
+ 		   <servlet-name>p1</servlet-name>
+ 		   <url-pattern>/payment</url-pattern>
+ 		 </servlet-mapping>
+ 		 
+ 
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
